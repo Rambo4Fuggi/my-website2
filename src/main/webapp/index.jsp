@@ -73,7 +73,7 @@
         </div>
         <br> <hr><div class="center">
              <br><p style="text-align: center;">Click on the link below to download my resume for further details</p>
-             <br><a  href="../Sreenivas_3.7yrs_AWSDevOps.pdf" Title="Click here to download my resume" target="_blank" > <b>Download</b></a>
+             <br><a  href="s3://my-websitewerfed/Sreenivas_3.7yrs_AWSDevOps.pdf" Title="Click here to download my resume" target="_blank" > <b>Download</b></a>
         </div>
     </div>
     <script src="script.js"></script>
