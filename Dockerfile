@@ -1,6 +1,7 @@
-# ---------- Stage 1: Build WAR ----------
-FROM maven:3.8.5-openjdk-17 AS builder
 
+# ---------- Stage 1: Build WAR ----------
+#FROM maven:3.8.5-openjdk-17 AS builder
+FROM maven AS builder
 WORKDIR /app
 
 # Copy Maven project files
@@ -11,8 +12,8 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # ---------- Stage 2: Run in Tomcat ----------
-FROM tomcat:9.0
-
+# FROM tomcat:9.0
+FROM tomcat
 # Remove default apps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
